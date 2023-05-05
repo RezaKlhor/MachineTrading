@@ -1,10 +1,15 @@
 const MongoClient = require("mongodb").MongoClient;
 const mongodb = require("mongodb");
+const {connectionString}= require("../appconfig")
 
 let client;
 
 async function createUser(phonenumber, email, password, fullname) {
   const db = await getDb();
+  const existingUser = await getUserByEmail(email);
+  if (existingUser) {
+    throw new Error("Email already exists");
+  }
   const newId = new mongodb.ObjectId();
   const User = {
     _id: newId,
@@ -16,6 +21,7 @@ async function createUser(phonenumber, email, password, fullname) {
   await db.collection("Users").insertOne(User);
   return newId;
 }
+
 
 async function getUsers() {
   const db = await getDb();
@@ -40,6 +46,10 @@ async function getUserByEmail(email) {
 }
 async function updateUser(User) {
   const db = await getDb();
+  const existingUser = await getUserByEmail(User.email);
+  if (existingUser && existingUser._id.toString() !== User._id) {
+    throw new Error("Email already exists");
+  }
   const updatedUser = await db
     .collection("Users")
     .findOneAndUpdate(
@@ -49,7 +59,6 @@ async function updateUser(User) {
     );
   return updatedUser.value;
 }
-
 async function deleteUser(id) {
   const db = await getDb();
   const deletedUser = await db
@@ -61,7 +70,7 @@ async function deleteUser(id) {
 async function getDb() {
   if (!client) {
     const uri =
-      "mongodb://127.0.0.1:27017";
+    connectionString;
     client = await MongoClient.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

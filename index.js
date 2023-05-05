@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const {log}= require("./Database/LogRepository")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const repo= require("./Database/UserRepository");
@@ -43,7 +44,7 @@ app.post('/register', async (req, res) => {
     await repo.createUser(req.body.phonenumber,req.body.email,hashedPassword,req.body.fullname)
     res.status(201).json({ message: 'User registered successfully' });
   } catch (err) {
-    console.error(err);
+    await log(`${err} in register`)
     res.status(500).json({ message: 'Internal server error' });
   }
 });
@@ -67,8 +68,9 @@ app.post('/login', async (req, res) => {
     const token = jwt.sign({ id: user.id }, 'secret_key');
     res.json({ token });
   } catch (err) {
-    console.error(err);
+    await log(`${err} in login`)
     res.status(500).json({ message: 'Internal server error' });
+
   }
 });
 
