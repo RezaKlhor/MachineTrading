@@ -1,6 +1,6 @@
 const MongoClient = require("mongodb").MongoClient;
 const mongodb = require("mongodb");
-const {connectionString}= require("../appconfig")
+const {connectionString}= require("../appconfig.json")
 
 let client;
 
