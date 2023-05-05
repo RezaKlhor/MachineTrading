@@ -28,7 +28,7 @@ const authenticateToken = (req, res, next) => {
     next();
   });
 };
-
+app.get("/", function(req,res){return "helloworld"})
 // register endpoint
 app.post('/register', async (req, res) => {
   try {
