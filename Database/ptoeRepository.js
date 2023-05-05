@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const parser = new xml2js.Parser();
 
-const xmlData = fs.readFileSync("Database\\ptoe.xml", "utf8");
+const xmlData = fs.readFileSync("ptoe.xml", "utf8");
 
 async function getData() {
   return new Promise((resolve, reject) => {
