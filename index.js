@@ -7,9 +7,10 @@ const repo= require("./Database/UserRepository");
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 // middleware to parse request bodies as JSON
 app.use(bodyParser.json());
+const cors = require("cors");
+app.use(cors());
 
 // middleware to authenticate requests using JWT token
 const authenticateToken = (req, res, next) => {
