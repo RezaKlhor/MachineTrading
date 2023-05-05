@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const {log}= require("./LogRepository.js")
+const {log}= require("./Database/LogRepository")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const repo= require("./UserRepository.js");
+const repo= require("./Database/UserRepository");
 const app = express();
 const port = process.env.PORT || 3000;
 
