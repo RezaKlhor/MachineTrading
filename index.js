@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const repo = require("./Database/UserRepository");
 const ptoeRepo = require("./Database/ptoeRepository");
+const tableResolver = require("./Resolvers/table-resolver")
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -36,6 +37,7 @@ app.get("/api/ptoe", async (req, res) => {
     res.status(500).send("something went wrong");
   }
 });
+app.get("/api/table",tableResolver.getTable)
 app.get("/", function (req, res) {
   return "helloworld";
 });

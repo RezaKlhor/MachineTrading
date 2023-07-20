@@ -1,3 +1,4 @@
 {
-    "connectionString":"mongodb+srv://rezakalhor19:1234reza@machinetrading.fucwqep.mongodb.net/"
+    "connectionString":"mongodb+srv://rezakalhor19:1234reza@machinetrading.fucwqep.mongodb.net/",
+    "TableReportProviderServerAddress":"http://aprime.pythonanywhere.com"
 }
