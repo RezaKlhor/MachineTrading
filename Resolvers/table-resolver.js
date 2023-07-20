@@ -1,8 +1,8 @@
-const { TableReportProviderServerAddress } = require("../appconfig.json");
+const { TableReportProviderServerAddress: tableReportProviderServerAddress } = require("../appconfig.json");
 async function getTable(request, response) {
   try {
     const result = await fetch(
-      `${TableReportProviderServerAddress}/tablo/all/${request.body.date}`,
+      `${tableReportProviderServerAddress}/tablo/all/${request.body.date}`,
       {
         headers: {
           accept:
@@ -17,13 +17,14 @@ async function getTable(request, response) {
         method: "GET",
       }
     );
+    throw new Error("oh oh")
     const responseBpdy = await result.text();
     response.status(200).send(responseBpdy);
   } catch (e) {
     response
       .status(400)
       .send(
-        "get table info caused error because the date is an off day for stock market"
+        `get table info caused error because the date is an off day for stock market and the exeprion was ${e} and the server address was ${tableReportProviderServerAddress}`
       );
   }
 }
