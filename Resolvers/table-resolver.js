@@ -1,7 +1,9 @@
 const { TableReportProviderServerAddress: tableReportProviderServerAddress } = require("../appconfig.json");
+const axios = require("axios");
+
 async function getTable(request, response) {
   try {
-    const result = await fetch(
+    const result = await axios.get(
       `${tableReportProviderServerAddress}/tablo/all/${request.body.date}`,
       {
         headers: {
@@ -12,19 +14,15 @@ async function getTable(request, response) {
           "upgrade-insecure-requests": "1",
           cookie: "csrftoken=f8K3nPDeXeMN2spRhiwM7pxxqYZ9tJH7",
         },
-        referrerPolicy: "strict-origin-when-cross-origin",
-        body: null,
-        method: "GET",
       }
     );
-    throw new Error("oh oh")
-    const responseBpdy = await result.text();
-    response.status(200).send(responseBpdy);
+    const responseBody = result.data;
+    response.status(200).send(responseBody);
   } catch (e) {
     response
       .status(400)
       .send(
-        `get table info caused error because the date is an off day for stock market and the exeprion was ${e} and the server address was ${tableReportProviderServerAddress}`
+        `get table info caused error because the date is an off day for stock market and the exception was ${e} and the server address was ${tableReportProviderServerAddress}`
       );
   }
 }
