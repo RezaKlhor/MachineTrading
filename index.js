@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const repo = require("./Database/UserRepository");
 const ptoeRepo = require("./Database/ptoeRepository");
 const tableResolver = require("./Resolvers/table-resolver")
+const aiResolver = require("./Resolvers/ai-resolver")
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -38,6 +39,7 @@ app.get("/api/ptoe", async (req, res) => {
   }
 });
 app.get("/api/table",tableResolver.getTable)
+app.get("/api/predict",aiResolver.getPrediction)
 app.get("/", function (req, res) {
   return "helloworld";
 });
