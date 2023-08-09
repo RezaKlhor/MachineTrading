@@ -19,6 +19,7 @@ async function getTable(request, response) {
     const responseBody = result.data;
     response.status(200).send(responseBody);
   } catch (e) {
+    
     response
       .status(400)
       .send(

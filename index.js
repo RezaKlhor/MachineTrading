@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { log } = require("./Database/LogRepository");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const repo = require("./Database/UserRepository");
 const ptoeRepo = require("./Database/ptoeRepository");
