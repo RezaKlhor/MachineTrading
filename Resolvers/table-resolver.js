@@ -4,7 +4,7 @@ const axios = require("axios");
 async function getTable(request, response) {
   try {
     const result = await axios.get(
-      `${tableReportProviderServerAddress}/tablo/all/${request.body.date}`,
+      `${tableReportProviderServerAddress}/tablo/new/${request.body.date}`,
       {
         headers: {
           accept:
