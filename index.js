@@ -26,10 +26,12 @@ const authenticateToken = (req, res, next) => {
     if (err) {
       return res.status(401).json({ message: "Invalid authentication token" });
     }
-    const currentTimestamp = Math.floor(Date.now() / 1000)
-    if (decodedToken.iat+ 24*60*60 < currentTimestamp) {
-      return res.status(401).json({ message: "Authentication token has expired" });
-    } 
+    const currentTimestamp = Math.floor(Date.now() / 1000);
+    if (decodedToken.iat + 24 * 60 * 60 < currentTimestamp) {
+      return res
+        .status(401)
+        .json({ message: "Authentication token has expired" });
+    }
     req.user = decodedToken;
     next();
   });
@@ -42,16 +44,19 @@ try {
       res.status(500).send("something went wrong");
     }
   });
-  app.get("/api/board/getOne",authenticateToken, tableResolver.getTable);
-  app.get("/api/board/getAll",authenticateToken, tableResolver.getAllBoard);
-  app.get("/api/common/getStocks",authenticateToken, commonResolver.getStocks);
+  app.get("/api/board/getOne", authenticateToken, tableResolver.getTable);
+  app.get("/api/board/getAll", authenticateToken, tableResolver.getAllBoard);
+  app.get("/api/common/getStocks", authenticateToken, commonResolver.getStocks);
   app.get("/api/predict", aiResolver.getPrediction);
   app.get("/", function (req, res) {
     return "helloworld";
   });
   app.post("/register", async (req, res) => {
     try {
-      // check if user already exists
+      if (req.body.referrerCode != "mashintrading2023_ref_user")
+        return res
+          .status(403)
+          .json({ message: "you are not authorized to register account" });
       const existingUser = await repo.getUserByEmail(req.body.email);
       if (existingUser) {
         return res
