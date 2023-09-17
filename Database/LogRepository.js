@@ -13,6 +13,7 @@ async function log(message) {
   };
   await db.collection("logs").insertOne(package);
   return newId;
+  
 }
 
 
@@ -23,6 +24,7 @@ async function getDb() {
     client = await MongoClient.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      socketTimeoutMS: 2000
     });
   }
   const db = client.db("MachineTrading");
