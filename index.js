@@ -22,11 +22,15 @@ const authenticateToken = (req, res, next) => {
     return res.status(401).json({ message: "Authentication token missing" });
   }
 
-  jwt.verify(token, "secret_key", (err, user) => {
+  jwt.verify(token, "secret_key", (err, decodedToken) => {
     if (err) {
       return res.status(401).json({ message: "Invalid authentication token" });
     }
-    req.user = user;
+    const currentTimestamp = Math.floor(Date.now() / 1000)
+    if (decodedToken.iat+ 24*60*60 < currentTimestamp) {
+      return res.status(401).json({ message: "Authentication token has expired" });
+    } 
+    req.user = decodedToken;
     next();
   });
 };
