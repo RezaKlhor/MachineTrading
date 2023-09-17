@@ -17,15 +17,14 @@ const cors = require("cors");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
-  const authHeader = req.headers["authorization"];
-  const token = authHeader && authHeader.split(" ")[1];
+  const token = req.headers["authorization"];
   if (token == null) {
     return res.status(401).json({ message: "Authentication token missing" });
   }
 
   jwt.verify(token, "secret_key", (err, user) => {
     if (err) {
-      return res.status(403).json({ message: "Invalid authentication token" });
+      return res.status(401).json({ message: "Invalid authentication token" });
     }
     req.user = user;
     next();
