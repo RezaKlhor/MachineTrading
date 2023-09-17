@@ -39,9 +39,9 @@ try {
       res.status(500).send("something went wrong");
     }
   });
-  app.get("/api/board/getOne", tableResolver.getTable);
-  app.get("/api/board/getAll", tableResolver.getAllBoard);
-  app.get("/api/common/getStocks", commonResolver.getStocks);
+  app.get("/api/board/getOne",authenticateToken, tableResolver.getTable);
+  app.get("/api/board/getAll",authenticateToken, tableResolver.getAllBoard);
+  app.get("/api/common/getStocks",authenticateToken, commonResolver.getStocks);
   app.get("/api/predict", aiResolver.getPrediction);
   app.get("/", function (req, res) {
     return "helloworld";
