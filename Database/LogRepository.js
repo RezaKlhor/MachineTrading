@@ -13,7 +13,6 @@ async function log(message) {
   };
   await db.collection("logs").insertOne(package);
   return newId;
-  
 }
 
 

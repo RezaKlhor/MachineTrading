@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const repo = require("./Database/UserRepository");
 const ptoeRepo = require("./Database/ptoeRepository");
 const tableResolver = require("./Resolvers/table-resolver");
+const athResolver = require('./Resolvers/ath-resolver')
 const aiResolver = require("./Resolvers/ai-resolver");
 const commonResolver = require("./Resolvers/common-resolver");
 const { errorHandler } = require("./Middlewares/errorHanlder");
@@ -47,6 +48,8 @@ try {
   app.get("/api/board/getOne", authenticateToken, tableResolver.getTable);
   app.get("/api/board/getAll", authenticateToken, tableResolver.getAllBoard);
   app.get("/api/common/getStocks", authenticateToken, commonResolver.getStocks);
+  app.get("/api/ath/getAll",authenticateToken,athResolver.getAll)
+  app.get("/api/ath/getOne",authenticateToken,athResolver.getOne)
   app.get("/api/predict", aiResolver.getPrediction);
   app.get("/", function (req, res) {
     return "helloworld";
