@@ -16,6 +16,8 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 const cors = require("cors");
+const { getPaginatedCpStocks } = require("./Resolvers/cp-resolver");
+const { getUserDetail, updateUser } = require("./Resolvers/user-resolver");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
@@ -78,6 +80,9 @@ try {
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
   app.get("/api/predict", aiResolver.getPrediction);
+  app.get("/api/cp/getpaginated",getPaginatedCpStocks)
+  app.get("/getUserDetail",getUserDetail)
+  app.post("/updateUser",updateUser)
   app.get("/", function (req, res) {
     return "helloworld";
   });
