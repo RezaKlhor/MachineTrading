@@ -15,9 +15,10 @@ async function getAll(request, response, next) {
       }
     );
     const responseBody = result.data;
-    const newArray = Object.entries(result.data).map(([key, value]) => {
+    let newArray = Object.entries(result.data).map(([key, value]) => {
       return { stockTitle: key, ...value };
     });
+    newArray = newArray.map((stock, index) => ({ index: index + 1, ...stock }));
     response.status(200).send(JSON.stringify(newArray));
   } catch (e) {
     next(e);

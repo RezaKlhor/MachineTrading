@@ -75,6 +75,7 @@ try {
     }
   });
   app.get("/api/board/getOne", tableResolver.getTable);
+  app.get("/api/board/categories", tableResolver.getCategories);
   app.get("/api/board/getAll", tableResolver.getAllBoard);
   app.get("/api/common/getStocks", commonResolver.getStocks);
   app.get("/api/ath/getAll", athResolver.getAll);
