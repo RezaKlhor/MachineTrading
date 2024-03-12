@@ -4,7 +4,6 @@ async function errorHandler(err, req, res, next) {
   try {
     await log(err);
   } catch (e) {
-    console.log(e);
   }
   try {
     if (err.response.status == 400) {

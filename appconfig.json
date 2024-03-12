@@ -1,7 +1,7 @@
 {
     "connectionString":"mongodb://45.129.36.165:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1",
     "TableReportProviderServerAddress":"http://45.129.36.165:1278",
-    "AiReportResolverServerAddress":"http://45.129.36.165:6100",
+    "AiReportResolverServerAddress":"http://45.129.36.165:8000",
     "ReferrerCodes":{
         "FullAccess":"mashintrading2023_ref_user_eEqA$dKAWJEuAqs",
         "Ordinary":"mashintrading2023_ref_user"

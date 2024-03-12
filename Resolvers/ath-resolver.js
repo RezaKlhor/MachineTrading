@@ -18,11 +18,46 @@ async function getAll(request, response, next) {
     let newArray = Object.entries(result.data).map(([key, value]) => {
       return { stockTitle: key, ...value };
     });
+    newArray.sort((a, b) => b.to_ath - a.to_ath);
     newArray = newArray.map((stock, index) => ({ index: index + 1, ...stock }));
+    newArray = filterData(
+      newArray,
+      request.query.categoryArg,
+      request.query.nameArg
+    );
     response.status(200).send(JSON.stringify(newArray));
   } catch (e) {
     next(e);
   }
+}
+function filterData(
+  data,
+  category,
+  name
+) {
+  data = data.filter((stock) => {
+    function isArrayWithData(data) {
+      if (typeof data === "string") {
+        try {
+          const parsedData = JSON.parse(data);
+          return Array.isArray(parsedData) && parsedData.length > 0;
+        } catch (error) {
+          return false;
+        }
+      } else {
+        return Array.isArray(data) && data.length > 0;
+      }
+    }
+    const categoryArray = isArrayWithData(category) ? JSON.parse(category) : [];
+    const categoryCond =
+      categoryArray.length > 0
+        ? categoryArray.some((cate) => cate == stock.type)
+        : true;
+
+    const nameCond = name ? stock.stockTitle.includes(name) : true;
+    return categoryCond && nameCond;
+  });
+  return data;
 }
 async function getOne(request, response, next) {
   try {
@@ -44,4 +79,4 @@ async function getOne(request, response, next) {
     next(e);
   }
 }
-module.exports = { getAll ,getOne};
+module.exports = { getAll, getOne };
