@@ -24,7 +24,15 @@ async function getPaginatedCpStocks(request, response, next) {
           fundamental: [],
         };
       }
-      acc[key].fundamental.push(obj);
+      const shouldInserted = filterData(
+        obj,
+        request.query.nameArg,
+        request.query.categoryArg,
+        request.query.importanceArg,
+        request.query.announcementArg,
+        request.query.isAuditedArg
+      );
+      if (shouldInserted) acc[key].fundamental.push(obj);
       return acc;
     }, {});
 
@@ -36,9 +44,59 @@ async function getPaginatedCpStocks(request, response, next) {
         fundamental: item.fundamental,
       })),
     };
+    responseModel.stocks=responseModel.stocks.filter(s=> s.fundamental.length>0)
     response.status(200).send(JSON.stringify(responseModel));
   } catch (e) {
     next(e);
   }
+}
+function filterData(
+  data,
+  name,
+  category,
+  importance,
+  announcement_type,
+  is_audited
+) {
+  function isArrayWithData(data) {
+    if (typeof data === "string") {
+      try {
+        const parsedData = JSON.parse(data);
+        return Array.isArray(parsedData) && parsedData.length > 0;
+      } catch (error) {
+        return false;
+      }
+    } else {
+      return Array.isArray(data) && data.length > 0;
+    }
+  }
+  const categoryArray = isArrayWithData(category) ? JSON.parse(category) : [];
+  const announcmentTypeArray = isArrayWithData(announcement_type)
+    ? JSON.parse(announcement_type)
+    : [];
+  const importanceArray = isArrayWithData(importance)
+    ? JSON.parse(importance)
+    : [];
+  const categoryCond =
+    categoryArray.length > 0
+      ? categoryArray.some((cate) => cate == data.type)
+      : true;
+  const announcmentTypeCond =
+    announcmentTypeArray.length > 0
+      ? announcmentTypeArray.some((cate) => cate == data.announcement_type)
+      : true;
+  const importanceCond =
+    importanceArray.length > 0
+      ? importanceArray.some((cate) => cate == data.importance)
+      : true;
+  const is_auditedCond = !is_audited ? true : data.is_audited == is_audited;
+  const nameCond = name ? data.symbol.includes(name) : true;
+  return (
+    importanceCond &&
+    is_auditedCond &&
+    announcmentTypeCond &&
+    categoryCond &&
+    nameCond
+  );
 }
 module.exports = { getPaginatedCpStocks };
