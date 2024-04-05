@@ -3,7 +3,7 @@ const axios = require("axios");
 async function getPaginatedCpStocks(request, response, next) {
   try {
     const result = await axios.get(
-      `${TableReportProviderServerAddress}/cpdemo/all/${request.query.pageIndex}`,
+      `${TableReportProviderServerAddress}/cpdemo/allv2`,
       {
         headers: {
           accept: "application/json",
@@ -37,7 +37,6 @@ async function getPaginatedCpStocks(request, response, next) {
     }, {});
 
     const responseModel = {
-      totalCount: responseBody.total,
       stocks: Object.values(grouped).map((item) => ({
         date: item.date,
         symbol: item.symbol,
@@ -89,7 +88,8 @@ function filterData(
     importanceArray.length > 0
       ? importanceArray.some((cate) => cate == data.importance)
       : true;
-  const is_auditedCond = !is_audited ? true : data.is_audited == is_audited;
+  const mio= (is_audited=='true')
+  const is_auditedCond = !is_audited ? true : data.is_audited == mio;
   const nameCond = name ? data.symbol.includes(name) : true;
   return (
     importanceCond &&
