@@ -14,6 +14,7 @@ async function getPaginatedCpStocks(request, response, next) {
         },
       }
     );
+    var maxDate = 0;
     const responseBody = result.data;
     const grouped = responseBody.data.reduce((acc, obj) => {
       const key = obj.date + "-" + obj.symbol;
@@ -32,6 +33,7 @@ async function getPaginatedCpStocks(request, response, next) {
         request.query.announcementArg,
         request.query.isAuditedArg
       );
+      if (parseInt(obj.date) > maxDate) maxDate = parseInt(obj.date);
       if (shouldInserted) acc[key].fundamental.push(obj);
       return acc;
     }, {});
@@ -43,7 +45,10 @@ async function getPaginatedCpStocks(request, response, next) {
         fundamental: item.fundamental,
       })),
     };
-    responseModel.stocks=responseModel.stocks.filter(s=> s.fundamental.length>0)
+    responseModel.stocks = responseModel.stocks.filter(
+      (s) => s.fundamental.length > 0
+    );
+    responseModel.total=responseModel.stocks.length
     response.status(200).send(JSON.stringify(responseModel));
   } catch (e) {
     next(e);
@@ -69,6 +74,9 @@ function filterData(
       return Array.isArray(data) && data.length > 0;
     }
   }
+  if (parseInt(data.date) < 13750101) {
+    return false;
+  }
   const categoryArray = isArrayWithData(category) ? JSON.parse(category) : [];
   const announcmentTypeArray = isArrayWithData(announcement_type)
     ? JSON.parse(announcement_type)
@@ -88,7 +96,7 @@ function filterData(
     importanceArray.length > 0
       ? importanceArray.some((cate) => cate == data.importance)
       : true;
-  const mio= (is_audited=='true')
+  const mio = is_audited == "true";
   const is_auditedCond = !is_audited ? true : data.is_audited == mio;
   const nameCond = name ? data.symbol.includes(name) : true;
   return (
