@@ -21,7 +21,7 @@ const { getUserDetail, updateUser } = require("./Resolvers/user-resolver");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register") {
+  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics") {
     next();
     return;
   }
@@ -45,7 +45,7 @@ const authenticateToken = (req, res, next) => {
   });
 };
 const authorize = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register") {
+  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics") {
     next();
     return;
   }
@@ -77,7 +77,9 @@ try {
   app.get("/api/board/getOne", tableResolver.getTable);
   app.get("/api/board/categories", tableResolver.getCategories);
   app.get("/api/board/getAll", tableResolver.getAllBoard);
+  app.get("/api/board/lastDate", tableResolver.getLastDate);
   app.get("/api/common/getStocks", commonResolver.getStocks);
+  app.get("/api/common/getMarketOverallStatistics", commonResolver.getMarketOverallParameters);
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
   app.get("/api/predict", aiResolver.getPrediction);
