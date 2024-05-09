@@ -84,8 +84,10 @@ try {
   app.get("/api/common/getMarketOverallStatistics", commonResolver.getMarketOverallParameters);
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
-  app.get("/api/predict", aiResolver.getAllPrediction);
-  app.get("/api/oscPredict", aiResolver.getOscPrediction);
+  app.get("/api/predict/weeklyPredict", aiResolver.getAllWeeklyPrediction);
+  app.get("/api/predict/monthlyPredict", aiResolver.getAllMonthlyPrediction);
+  app.get("/api/predict/oscPredict", aiResolver.getOscPrediction);
+  app.get("/api/predict/overall", aiResolver.getOverall);
   app.get("/api/cp/getpaginated",getPaginatedCpStocks)
   app.get("/api/fearngreed/getTotal",getTotal)
   app.get("/getUserDetail",getUserDetail)

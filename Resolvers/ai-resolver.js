@@ -1,82 +1,45 @@
 const axios = require("axios");
 const { json, JSON } = require("sequelize");
+const static = require("./all_preds");
 const serverAddress =
   require("../appconfig.json").AiReportResolverServerAddress;
+const stocks = require("../Database/stocks.json");
 
-async function getPrediction(request, response, next) {
+async function getAllWeeklyPrediction(request, response, next) {
   try {
-    console.log("Request:", request.query.stockCode);
-
-    const result = await axios.get(
-      `${serverAddress}/get_pred/${request.query.stockCode}`,
-      {
-        headers: {
-          accept: "application/json",
-          "accept-language": "en-US,en;q=0.9,fa;q=0.8",
-          "Content-Type": "application/json", // Add this line
-        },
-      }
-    );
-
-    console.log("API Response:", result.data);
-
-    const responseBody = result.data;
-
-    response.status(200).send(responseBody);
+    const oscillationData = static.getWeeklyStocksData();
+    response.status(200).send(oscillationData);
   } catch (e) {
     next(e);
   }
 }
-async function getAllPrediction(request, response, next) {
+async function getAllMonthlyPrediction(request, response, next) {
   try {
-    console.log("Request:", request.query.stockCode);
-
-    const result = await axios.get(
-      `${serverAddress}/get_all`,
-      {
-        headers: {
-          accept: "application/json",
-          "accept-language": "en-US,en;q=0.9,fa;q=0.8",
-          "Content-Type": "application/json", // Add this line
-        },
-      }
-    );
-
-    console.log("API Response:", result.data);
-
-    const responseBody = result.data;
-
-    response.status(200).send(responseBody);
+    const oscillationData = static.getMonthlyStocksData();
+    response.status(200).send(oscillationData);
   } catch (e) {
     next(e);
   }
 }
 async function getOscPrediction(request, response, next) {
   try {
-    console.log("Request:", request.query.stockCode);
-
-    const result = await axios.get(
-      `${serverAddress}/get_pred_osc/${request.query.stockCode}`,
-      {
-        headers: {
-          accept: "application/json",
-          "accept-language": "en-US,en;q=0.9,fa;q=0.8",
-          "Content-Type": "application/json", // Add this line
-        },
-      }
-    );
-
-    console.log("API Response:", result.data);
-
-    const responseBody = result.data;
-
-    response.status(200).send(responseBody);
+    const oscillationData = static.getOscStocksData();
+    response.status(200).send(oscillationData);
+  } catch (e) {
+    next(e);
+  }
+}
+async function getOverall(request, response, next) {
+  try {
+    const overall= static.getKoldata()
+    response.status(200).send(overall);
   } catch (e) {
     next(e);
   }
 }
 module.exports = {
-  getPrediction,
   getOscPrediction,
-  getAllPrediction
+  getAllWeeklyPrediction,
+  getAllMonthlyPrediction,
+  getOverall
 };

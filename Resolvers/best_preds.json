@@ -1,0 +1,650 @@
+{
+  "68203878405672734": {
+    "monthly": 1,
+    "monthly_confidence": 76.87303518179031,
+    "weekly": 1,
+    "weekly_confidence": 66.1591649055481,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "10120557300120078": {
+    "monthly": 1,
+    "monthly_confidence": 83.57719941204657,
+    "weekly": 1,
+    "weekly_confidence": 88.41323256492615,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "65490886290565185": {
+    "monthly": 1,
+    "monthly_confidence": 58.36107688034951,
+    "weekly": 2,
+    "weekly_confidence": 50.93839168548584,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "44013656953678055": {
+    "monthly": 1,
+    "monthly_confidence": 87.48830820594111,
+    "weekly": 1,
+    "weekly_confidence": 89.86008763313293,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "45284811973404357": {
+    "monthly": 1,
+    "monthly_confidence": 58.27309912469541,
+    "weekly": 1,
+    "weekly_confidence": 90.74680209159851,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "18865325633315847": {
+    "monthly": 1,
+    "monthly_confidence": 63.953938424572364,
+    "weekly": 1,
+    "weekly_confidence": 71.97185754776001,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "52455922800537930": {
+    "monthly": 1,
+    "monthly_confidence": 64.1020702648118,
+    "weekly": 1,
+    "weekly_confidence": 85.4066252708435,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "971068957336171": {
+    "monthly": 1,
+    "monthly_confidence": 52.063673363480625,
+    "weekly": 1,
+    "weekly_confidence": 76.41268968582153,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "54369290104873523": {
+    "monthly": 1,
+    "monthly_confidence": 74.79818867564433,
+    "weekly": 1,
+    "weekly_confidence": 71.51387333869934,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "56574323121551263": {
+    "monthly": 1,
+    "monthly_confidence": 69.55209444297263,
+    "weekly": 1,
+    "weekly_confidence": 75.29126405715942,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "27668158733246204": {
+    "monthly": 1,
+    "monthly_confidence": 68.6832476090438,
+    "weekly": 1,
+    "weekly_confidence": 59.93548035621643,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "10831074117626896": {
+    "monthly": 1,
+    "monthly_confidence": 89.09134272615927,
+    "weekly": 1,
+    "weekly_confidence": 51.51593089103699,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "3050342257199174": {
+    "monthly": 1,
+    "monthly_confidence": 76.08426901956807,
+    "weekly": 1,
+    "weekly_confidence": 75.36104321479797,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "793710053482057": {
+    "monthly": 1,
+    "monthly_confidence": 65.34996756941491,
+    "weekly": 1,
+    "weekly_confidence": 86.3107681274414,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "37222720235819361": {
+    "monthly": 1,
+    "monthly_confidence": 63.547939315177906,
+    "weekly": 1,
+    "weekly_confidence": 65.0871753692627,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "33293588228706998": {
+    "monthly": 1,
+    "monthly_confidence": 58.42516059829896,
+    "weekly": 1,
+    "weekly_confidence": 75.90320110321045,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "15521712617204216": {
+    "monthly": 1,
+    "monthly_confidence": 69.77583878686713,
+    "weekly": 1,
+    "weekly_confidence": 94.52303051948547,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "53449700212786324": {
+    "monthly": 1,
+    "monthly_confidence": 55.743093268733624,
+    "weekly": 1,
+    "weekly_confidence": 74.42657947540283,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "71666521540545716": {
+    "monthly": 2,
+    "monthly_confidence": 78.58616625097721,
+    "weekly": 1,
+    "weekly_confidence": 77.70861983299255,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "17059960254855208": {
+    "monthly": 1,
+    "monthly_confidence": 60.42017672570582,
+    "weekly": 1,
+    "weekly_confidence": 90.2481198310852,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "67522512921942106": {
+    "monthly": 1,
+    "monthly_confidence": 78.59135849423949,
+    "weekly": 1,
+    "weekly_confidence": 76.8059492111206,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "70309338813767186": {
+    "monthly": 1,
+    "monthly_confidence": 83.76580948797262,
+    "weekly": 1,
+    "weekly_confidence": 85.97419261932373,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "71672399601682259": {
+    "monthly": 1,
+    "monthly_confidence": 76.11028088870819,
+    "weekly": 1,
+    "weekly_confidence": 56.98431730270386,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "28320293733348826": {
+    "monthly": 1,
+    "monthly_confidence": 59.435125840086926,
+    "weekly": 1,
+    "weekly_confidence": 65.2501106262207,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "2318736941376687": {
+    "monthly": 1,
+    "monthly_confidence": 53.647865301004884,
+    "weekly": 1,
+    "weekly_confidence": 52.69916653633118,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "23441366113375722": {
+    "monthly": 1,
+    "monthly_confidence": 62.52178044682745,
+    "weekly": 1,
+    "weekly_confidence": 91.36760830879211,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "70474983732269112": {
+    "monthly": 1,
+    "monthly_confidence": 64.61822519932082,
+    "weekly": 1,
+    "weekly_confidence": 75.17162561416626,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "45452221088910484": {
+    "monthly": 1,
+    "monthly_confidence": 81.30550351226819,
+    "weekly": 1,
+    "weekly_confidence": 92.9349422454834,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "19471788163911687": {
+    "monthly": 0,
+    "monthly_confidence": 77.04040082081065,
+    "weekly": 1,
+    "weekly_confidence": 50.17576813697815,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "20966291817819448": {
+    "monthly": 1,
+    "monthly_confidence": 78.52982986362655,
+    "weekly": 1,
+    "weekly_confidence": 67.00130105018616,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "9481703061634967": {
+    "monthly": 1,
+    "monthly_confidence": 71.09528426843875,
+    "weekly": 2,
+    "weekly_confidence": 55.414748191833496,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "28450080638096732": {
+    "monthly": 1,
+    "monthly_confidence": 73.99018548591029,
+    "weekly": 1,
+    "weekly_confidence": 70.45236229896545,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "8725363201030474": {
+    "monthly": 0,
+    "monthly_confidence": 69.96628131755268,
+    "weekly": 1,
+    "weekly_confidence": 72.24658727645874,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "32347247706508046": {
+    "monthly": 1,
+    "monthly_confidence": 76.36317332008944,
+    "weekly": 1,
+    "weekly_confidence": 78.41623425483704,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "778253364357513": {
+    "monthly": 1,
+    "monthly_confidence": 55.224749086937926,
+    "weekly": 1,
+    "weekly_confidence": 66.75507426261902,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "62258804563636993": {
+    "monthly": 1,
+    "monthly_confidence": 67.91233917422811,
+    "weekly": 1,
+    "weekly_confidence": 76.79146528244019,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "59866041653103343": {
+    "monthly": 0,
+    "monthly_confidence": 70.29338224499368,
+    "weekly": 1,
+    "weekly_confidence": 56.221312284469604,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "16422980660132735": {
+    "monthly": 1,
+    "monthly_confidence": 70.6018551818652,
+    "weekly": 1,
+    "weekly_confidence": 65.5799388885498,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "10568944722570445": {
+    "monthly": 0,
+    "monthly_confidence": 89.36624702557582,
+    "weekly": 2,
+    "weekly_confidence": 42.29830801486969,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "20562694899904339": {
+    "monthly": 1,
+    "monthly_confidence": 80.90518979902164,
+    "weekly": 1,
+    "weekly_confidence": 45.835256576538086,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "20560887114747719": {
+    "monthly": 0,
+    "monthly_confidence": 54.07683163836003,
+    "weekly": 1,
+    "weekly_confidence": 67.03935861587524,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "22839330962768817": {
+    "monthly": 1,
+    "monthly_confidence": 80.1300803216087,
+    "weekly": 1,
+    "weekly_confidence": 56.36517405509949,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "35424116338766901": {
+    "monthly": 0,
+    "monthly_confidence": 43.51233825130048,
+    "weekly": 1,
+    "weekly_confidence": 54.34991121292114,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "47702059190622416": {
+    "monthly": 1,
+    "monthly_confidence": 77.16886729234118,
+    "weekly": 1,
+    "weekly_confidence": 52.828824520111084,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "52382684379473036": {
+    "monthly": 1,
+    "monthly_confidence": 55.243029859555705,
+    "weekly": 1,
+    "weekly_confidence": 60.543543100357056,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "35543935713999309": {
+    "monthly": 1,
+    "monthly_confidence": 63.577309449713994,
+    "weekly": 1,
+    "weekly_confidence": 69.43274736404419,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "67690708346979840": {
+    "monthly": 0,
+    "monthly_confidence": 59.99826945087545,
+    "weekly": 1,
+    "weekly_confidence": 71.38447165489197,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "13281937213456378": {
+    "monthly": 0,
+    "monthly_confidence": 49.85411220077103,
+    "weekly": 1,
+    "weekly_confidence": 61.564600467681885,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "40025799067544201": {
+    "monthly": 2,
+    "monthly_confidence": 89.83112216767069,
+    "weekly": 1,
+    "weekly_confidence": 89.85260725021362,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "58035444268544991": {
+    "monthly": 1,
+    "monthly_confidence": 75.20756578759,
+    "weekly": 1,
+    "weekly_confidence": 60.07730960845947,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "34641719089573667": {
+    "monthly": 1,
+    "monthly_confidence": 65.36986193193954,
+    "weekly": 1,
+    "weekly_confidence": 84.33428406715393,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "2400322364771558": {
+    "monthly": 1,
+    "monthly_confidence": 68.60337449601433,
+    "weekly": 1,
+    "weekly_confidence": 53.578388690948486,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "57600064931636077": {
+    "monthly": 0,
+    "monthly_confidence": 65.94524352953974,
+    "weekly": 1,
+    "weekly_confidence": 54.45801019668579,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "50792786683910016": {
+    "monthly": 0,
+    "monthly_confidence": 79.9568982459577,
+    "weekly": 1,
+    "weekly_confidence": 50.838565826416016,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "65023851436340574": {
+    "monthly": 1,
+    "monthly_confidence": 65.49859060536508,
+    "weekly": 1,
+    "weekly_confidence": 49.76491034030914,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "12387472624849835": {
+    "monthly": 1,
+    "monthly_confidence": 56.76901489248791,
+    "weekly": 1,
+    "weekly_confidence": 78.33486199378967,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "50503654866742146": {
+    "monthly": 0,
+    "monthly_confidence": 66.81723335004122,
+    "weekly": 1,
+    "weekly_confidence": 65.95744490623474,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "27405735172634593": {
+    "monthly": 2,
+    "monthly_confidence": 81.51638035556458,
+    "weekly": 1,
+    "weekly_confidence": 65.49023985862732,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "41122066907413786": {
+    "monthly": 1,
+    "monthly_confidence": 74.4192562304743,
+    "weekly": 1,
+    "weekly_confidence": 71.77709341049194,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "67141987086032267": {
+    "monthly": 0,
+    "monthly_confidence": 74.4768921483787,
+    "weekly": 1,
+    "weekly_confidence": 57.758158445358276,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "70289374539527245": {
+    "monthly": 0,
+    "monthly_confidence": 82.58140656143901,
+    "weekly": 1,
+    "weekly_confidence": 67.72432923316956,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "28854105556435129": {
+    "monthly": 1,
+    "monthly_confidence": 74.13588662934589,
+    "weekly": 1,
+    "weekly_confidence": 69.08260583877563,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "46982154647719707": {
+    "monthly": 0,
+    "monthly_confidence": 82.79783181683278,
+    "weekly": 1,
+    "weekly_confidence": 77.12660431861877,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "15930821245168534": {
+    "monthly": 2,
+    "monthly_confidence": 76.01439403473712,
+    "weekly": 1,
+    "weekly_confidence": 45.860835909843445,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "2589887561569709": {
+    "monthly": 0,
+    "monthly_confidence": 76.00437405955991,
+    "weekly": 1,
+    "weekly_confidence": 64.96196389198303,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "4507558419857064": {
+    "monthly": 0,
+    "monthly_confidence": 93.45311017701488,
+    "weekly": 0,
+    "weekly_confidence": 40.95720052719116,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "34721884030854211": {
+    "monthly": 2,
+    "monthly_confidence": 77.75063575770878,
+    "weekly": 1,
+    "weekly_confidence": 61.18481755256653,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "10145129193828624": {
+    "monthly": 1,
+    "monthly_confidence": 67.02593005924788,
+    "weekly": 0,
+    "weekly_confidence": 51.62656307220459,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "47841327496247362": {
+    "monthly": 0,
+    "monthly_confidence": 72.84996457662223,
+    "weekly": 2,
+    "weekly_confidence": 40.005967020988464,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "3542690854557886": {
+    "monthly": 2,
+    "monthly_confidence": 90.28154110835287,
+    "weekly": 1,
+    "weekly_confidence": 43.073368072509766,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "68117765376081366": {
+    "monthly": 0,
+    "monthly_confidence": 87.42767906001954,
+    "weekly": 1,
+    "weekly_confidence": 63.1061851978302,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "27096851668435724": {
+    "monthly": 1,
+    "monthly_confidence": 72.75854087531403,
+    "weekly": 1,
+    "weekly_confidence": 80.88444471359253,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "59486059679335017": {
+    "monthly": 1,
+    "monthly_confidence": 73.62323264429355,
+    "weekly": 1,
+    "weekly_confidence": 77.426278591156,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "31188566503248753": {
+    "monthly": 0,
+    "monthly_confidence": 63.552575083526705,
+    "weekly": 1,
+    "weekly_confidence": 68.13149452209473,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "34718633636164421": {
+    "monthly": 0,
+    "monthly_confidence": 76.47359702280943,
+    "weekly": 1,
+    "weekly_confidence": 65.12285470962524,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "28788598290160782": {
+    "monthly": 1,
+    "monthly_confidence": 72.45075836934114,
+    "weekly": 1,
+    "weekly_confidence": 79.12558317184448,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "40611478183231802": {
+    "monthly": 2,
+    "monthly_confidence": 75.19591070744217,
+    "weekly": 1,
+    "weekly_confidence": 44.580256938934326,
+    "weekly_success": 1,
+    "monthly_success": 1
+  },
+  "50100062518826135": {
+    "monthly": 0,
+    "monthly_confidence": 73.32356674872258,
+    "weekly": 1,
+    "weekly_confidence": 58.55364799499512,
+    "weekly_success": 0,
+    "monthly_success": 0
+  },
+  "16673205196919832": {
+    "monthly": 2,
+    "monthly_confidence": 88.95689643817624,
+    "weekly": 1,
+    "weekly_confidence": 41.77705943584442,
+    "weekly_success": 0,
+    "monthly_success": 1
+  },
+  "1": {
+    "monthly": 0,
+    "monthly_confidence": 74.06459442434736,
+    "weekly": 1,
+    "weekly_confidence": 63.94110321998596,
+    "weekly_success": 1,
+    "monthly_success": 0
+  },
+  "57": {
+    "monthly": 0,
+    "monthly_confidence": 80.04745486949999,
+    "weekly": 1,
+    "weekly_confidence": 73.92970323562622,
+    "weekly_success": 1,
+    "monthly_success": 0
+  }
+}
