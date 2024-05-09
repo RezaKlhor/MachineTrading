@@ -18,10 +18,11 @@ app.use(bodyParser.json());
 const cors = require("cors");
 const { getPaginatedCpStocks } = require("./Resolvers/cp-resolver");
 const { getUserDetail, updateUser } = require("./Resolvers/user-resolver");
+const { getTotal } = require("./Resolvers/fear-resolver");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics") {
+  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics" ||req.url.includes("/api/fearngreed/getTotal")) {
     next();
     return;
   }
@@ -45,7 +46,7 @@ const authenticateToken = (req, res, next) => {
   });
 };
 const authorize = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics") {
+  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics"||req.url.includes("/api/fearngreed/getTotal")) {
     next();
     return;
   }
@@ -78,12 +79,15 @@ try {
   app.get("/api/board/categories", tableResolver.getCategories);
   app.get("/api/board/getAll", tableResolver.getAllBoard);
   app.get("/api/board/lastDate", tableResolver.getLastDate);
+  app.get("/api/board/lastDays", tableResolver.getLastDaysAllBoard);
   app.get("/api/common/getStocks", commonResolver.getStocks);
   app.get("/api/common/getMarketOverallStatistics", commonResolver.getMarketOverallParameters);
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
-  app.get("/api/predict", aiResolver.getPrediction);
+  app.get("/api/predict", aiResolver.getAllPrediction);
+  app.get("/api/oscPredict", aiResolver.getOscPrediction);
   app.get("/api/cp/getpaginated",getPaginatedCpStocks)
+  app.get("/api/fearngreed/getTotal",getTotal)
   app.get("/getUserDetail",getUserDetail)
   app.post("/updateUser",updateUser)
   app.get("/", function (req, res) {

@@ -5,6 +5,7 @@ let client;
 
 async function log(message) {
   try {
+    console.log(message.message);
     const db = await getDb();
     const newId = new mongodb.ObjectId();
     const package = {

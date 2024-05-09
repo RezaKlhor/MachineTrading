@@ -56,6 +56,42 @@ async function getAllBoard(request, response, next) {
     next(e);
   }
 }
+async function getLastDaysAllBoard(request, response, next) {
+  try {
+    const result = await axios.get(
+      `${TableReportProviderServerAddress}/tablo/last-3-all-labels`,
+      {
+        headers: {
+          accept: "application/json",
+          "accept-language": "en-US,en;q=0.9,fa;q=0.8",
+          "proxy-connection": "keep-alive",
+          "upgrade-insecure-requests": "1",
+          cookie: "csrftoken=f8K3nPDeXeMN2spRhiwM7pxxqYZ9tJH7",
+        },
+      }
+    );
+    const stocks = result.data;
+    let newArray = Object.entries(result.data).map(([key, value]) => {
+      return value.map((v) => ({ stockTitle: key, ...v }));
+    });
+    newArray = [].concat(...newArray);
+    newArray.sort((a, b) => b.sum - a.sum);
+    newArray = newArray.map((stock, index) => ({ index: index + 1, ...stock }));
+    newArray = filterData(
+      newArray,
+      request.query.intelMoneyArg,
+      request.query.susArg,
+      request.query.realMoneyArg,
+      request.query.finalLastArg,
+      request.query.buyPowerArg,
+      request.query.categoryArg,
+      request.query.nameArg
+    );
+    response.status(200).send(JSON.stringify(newArray));
+  } catch (e) {
+    next(e);
+  }
+}
 function filterData(
   data,
   intelMoney,
@@ -155,8 +191,8 @@ async function getCategories(request, response, next) {
     next(e);
   }
 }
-async function getLastDate(request, response, next){
-  try{
+async function getLastDate(request, response, next) {
+  try {
     const result = await axios.get(
       `${TableReportProviderServerAddress}/lastdate`,
       {
@@ -170,13 +206,14 @@ async function getLastDate(request, response, next){
       }
     );
     response.status(200).send(result.data);
-  }catch(e){
-    next(e)
+  } catch (e) {
+    next(e);
   }
 }
 module.exports = {
   getTable,
   getAllBoard,
   getCategories,
-  getLastDate
+  getLastDate,
+  getLastDaysAllBoard,
 };
