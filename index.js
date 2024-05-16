@@ -22,7 +22,13 @@ const { getTotal } = require("./Resolvers/fear-resolver");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics" ||req.url.includes("/api/fearngreed/getTotal")) {
+  if (
+    req.url == "/login" ||
+    req.url == "/register" ||
+    req.url == "/api/common/getMarketOverallStatistics" ||
+    req.url.includes("/api/fearngreed/getTotal") ||
+    req.url.includes("/api/predict/overall")
+  ) {
     next();
     return;
   }
@@ -31,22 +37,34 @@ const authenticateToken = (req, res, next) => {
     return res.status(401).json({ message: "Authentication token missing" });
   }
 
-  jwt.verify(token, "way DARAM ATISH MIGIRAM123980dsgadsukadsvfagdhsvf232132vsghavsd sd dyewyugewguydsdagfghsdfgdsfgydu", (err, decodedToken) => {
-    if (err) {
-      return res.status(401).json({ message: "Invalid authentication token" });
+  jwt.verify(
+    token,
+    "way DARAM ATISH MIGIRAM123980dsgadsukadsvfagdhsvf232132vsghavsd sd dyewyugewguydsdagfghsdfgdsfgydu",
+    (err, decodedToken) => {
+      if (err) {
+        return res
+          .status(401)
+          .json({ message: "Invalid authentication token" });
+      }
+      const currentTimestamp = Math.floor(Date.now() / 1000);
+      if (decodedToken.iat + 24 * 60 * 60 < currentTimestamp) {
+        return res
+          .status(401)
+          .json({ message: "Authentication token has expired" });
+      }
+      req.user = decodedToken;
+      next();
     }
-    const currentTimestamp = Math.floor(Date.now() / 1000);
-    if (decodedToken.iat + 24 * 60 * 60 < currentTimestamp) {
-      return res
-        .status(401)
-        .json({ message: "Authentication token has expired" });
-    }
-    req.user = decodedToken;
-    next();
-  });
+  );
 };
 const authorize = (req, res, next) => {
-  if (req.url == "/login" || req.url == "/register" || req.url=="/api/common/getMarketOverallStatistics"||req.url.includes("/api/fearngreed/getTotal")) {
+  if (
+    req.url == "/login" ||
+    req.url == "/register" ||
+    req.url == "/api/common/getMarketOverallStatistics" ||
+    req.url.includes("/api/fearngreed/getTotal") ||
+    req.url.includes("/api/predict/overall")
+  ) {
     next();
     return;
   }
@@ -81,17 +99,23 @@ try {
   app.get("/api/board/lastDate", tableResolver.getLastDate);
   app.get("/api/board/lastDays", tableResolver.getLastDaysAllBoard);
   app.get("/api/common/getStocks", commonResolver.getStocks);
-  app.get("/api/common/getMarketOverallStatistics", commonResolver.getMarketOverallParameters);
+  app.get(
+    "/api/common/getMarketOverallStatistics",
+    commonResolver.getMarketOverallParameters
+  );
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
   app.get("/api/predict/weeklyPredict", aiResolver.getAllWeeklyPrediction);
   app.get("/api/predict/monthlyPredict", aiResolver.getAllMonthlyPrediction);
   app.get("/api/predict/oscPredict", aiResolver.getOscPrediction);
   app.get("/api/predict/overall", aiResolver.getOverall);
-  app.get("/api/cp/getpaginated",getPaginatedCpStocks)
-  app.get("/api/fearngreed/getTotal",getTotal)
-  app.get("/getUserDetail",getUserDetail)
-  app.post("/updateUser",updateUser)
+  app.get("/api/predict/weeklyPredictObserve", aiResolver.getAllWeeklyPredictionObserve);
+  app.get("/api/predict/monthlyPredictObserve", aiResolver.getAllMonthlyPredictionObserve);
+  app.get("/api/predict/oscPredictObserve", aiResolver.getAllOscPredictionObserve);
+  app.get("/api/cp/getpaginated", getPaginatedCpStocks);
+  app.get("/api/fearngreed/getTotal", getTotal);
+  app.get("/getUserDetail", getUserDetail);
+  app.post("/updateUser", updateUser);
   app.get("/", function (req, res) {
     return "helloworld";
   });
