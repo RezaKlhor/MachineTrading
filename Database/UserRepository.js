@@ -1,10 +1,20 @@
 const MongoClient = require("mongodb").MongoClient;
 const mongodb = require("mongodb");
-const {connectionString}= require("../appconfig.json")
-
+const { connectionString } = require("../appconfig.json");
 let client;
-// 
-async function createUser(phonenumber, email, password, firstName,lastName,userName,nationalCode,type,companyname,claims) {
+//
+async function createUser(
+  phonenumber,
+  email,
+  password,
+  firstName,
+  lastName,
+  userName,
+  nationalCode,
+  type,
+  companyname,
+  claims
+) {
   const db = await getDb();
   const User = {
     _id: userName,
@@ -16,12 +26,11 @@ async function createUser(phonenumber, email, password, firstName,lastName,userN
     email,
     type,
     companyname,
-    claims
+    claims,
   };
   await db.collection("Users").insertOne(User);
   return userName;
 }
-
 
 async function getUsers() {
   const db = await getDb();
@@ -34,33 +43,63 @@ async function getUserById(id) {
     return;
   }
   const db = await getDb();
-  const User = await db
-    .collection("Users")
-    .findOne({ _id: id });
+  const User = await db.collection("Users").findOne({ _id: id });
   return User;
 }
-async function getUserExistance(username,nationalCode) {
+async function getUserExistance(username, nationalCode) {
   const db = await getDb();
   const pipeline = [
     {
-      '$match': {
-        '$or': [
+      $match: {
+        $or: [
           {
-            '_id': username
-          }, {
-            'nationalCode': nationalCode
-          }
-        ]
-      }
-    }
+            _id: username,
+          },
+          {
+            nationalCode: nationalCode,
+          },
+        ],
+      },
+    },
   ];
   const users = await db.collection("Users").aggregate(pipeline).toArray();
-  return users.length>0;
+  return users.length > 0;
 }
-async function getUserByNationalCode(nationalCode){
+async function getUserByNationalCode(nationalCode) {
   const db = await getDb();
-  const user = await db.collection("Users").findOne({nationalCode});
+  const user = await db.collection("Users").findOne({ nationalCode });
   return user;
+}
+async function addToUserfavoriteList(userId, stockCode) {
+  const db = await getDb();
+  const user = await getUserById(userId);
+  if (user.favoritelist) {
+    if(user.favoritelist.includes(stockCode)){
+      throw new Error("REPEATED_STOCK")
+    }
+    user.favoritelist.push(stockCode);
+  } else {
+    user.favoritelist = [stockCode];
+  }
+  await db
+    .collection("Users")
+    .updateOne(
+      { _id: user._id },
+      { $set: { favoritelist: user.favoritelist } },
+      { returnOriginal: false }
+    );
+}
+async function removeFromUserfavoriteList(userId, stockCode) {
+  const db = await getDb();
+  const user = await getUserById(userId);
+  user.favoritelist= user.favoritelist.filter(s=> s!=stockCode)
+  await db
+    .collection("Users")
+    .updateOne(
+      { _id: user._id },
+      { $set: { favoritelist: user.favoritelist } },
+      { returnOriginal: false }
+    );
 }
 async function updateUser(user) {
   const db = await getDb();
@@ -87,8 +126,7 @@ async function deleteUser(id) {
 
 async function getDb() {
   if (!client) {
-    const uri =
-    connectionString;
+    const uri = connectionString;
     client = await MongoClient.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -104,5 +142,7 @@ module.exports = {
   getUserById,
   updateUser,
   deleteUser,
-  getUserExistance
+  getUserExistance,
+  addToUserfavoriteList,
+  removeFromUserfavoriteList
 };

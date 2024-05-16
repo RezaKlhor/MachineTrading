@@ -1,13 +1,13 @@
 const { log } = require("../Database/LogRepository");
-const { getErrorText } = require("./ErrorProducer");
+const { getErrorText ,isErrorExists} = require("./ErrorProducer");
 async function errorHandler(err, req, res, next) {
   try {
     await log(err);
   } catch (e) {
   }
   try {
-    if (err.response.status == 400) {
-      const errText = getErrorText(err.response.data.error);
+    if (isErrorExists(err.message)) {
+      const errText = getErrorText(err.message);
       res.status(400).send(errText);
       return;
     }

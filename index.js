@@ -17,7 +17,12 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 const cors = require("cors");
 const { getPaginatedCpStocks } = require("./Resolvers/cp-resolver");
-const { getUserDetail, updateUser } = require("./Resolvers/user-resolver");
+const {
+  getUserDetail,
+  updateUser,
+  addStockToFavoriteList,
+  removeStockFromFavoriteList
+} = require("./Resolvers/user-resolver");
 const { getTotal } = require("./Resolvers/fear-resolver");
 app.use(cors());
 
@@ -109,13 +114,24 @@ try {
   app.get("/api/predict/monthlyPredict", aiResolver.getAllMonthlyPrediction);
   app.get("/api/predict/oscPredict", aiResolver.getOscPrediction);
   app.get("/api/predict/overall", aiResolver.getOverall);
-  app.get("/api/predict/weeklyPredictObserve", aiResolver.getAllWeeklyPredictionObserve);
-  app.get("/api/predict/monthlyPredictObserve", aiResolver.getAllMonthlyPredictionObserve);
-  app.get("/api/predict/oscPredictObserve", aiResolver.getAllOscPredictionObserve);
+  app.get(
+    "/api/predict/weeklyPredictObserve",
+    aiResolver.getAllWeeklyPredictionObserve
+  );
+  app.get(
+    "/api/predict/monthlyPredictObserve",
+    aiResolver.getAllMonthlyPredictionObserve
+  );
+  app.get(
+    "/api/predict/oscPredictObserve",
+    aiResolver.getAllOscPredictionObserve
+  );
   app.get("/api/cp/getpaginated", getPaginatedCpStocks);
   app.get("/api/fearngreed/getTotal", getTotal);
   app.get("/getUserDetail", getUserDetail);
   app.post("/updateUser", updateUser);
+  app.post("/addStockToFavoriteList", addStockToFavoriteList);
+  app.post("/removeStockFromFavoriteList", removeStockFromFavoriteList);
   app.get("/", function (req, res) {
     return "helloworld";
   });

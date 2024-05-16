@@ -10,6 +10,7 @@ async function getUserDetail(request, response, next) {
         isCompany: user.type == 1,
         email: user.email,
         companyName: user.companyname,
+        favoriteList:user.favoritelist
       })
     );
   } catch (e) {
@@ -32,4 +33,20 @@ async function updateUser(request, response, next) {
     next(e);
   }
 }
-module.exports = { getUserDetail,updateUser };
+async function addStockToFavoriteList(request, response, next){
+  try{
+    await repo.addToUserfavoriteList(request.user.username,request.body.stockCode)
+    response.status(200).send('')
+  }catch(e){
+    next(e);
+  }
+}
+async function removeStockFromFavoriteList(request, response, next){
+  try{
+    await repo.removeFromUserfavoriteList(request.user.username,request.body.stockCode)
+    response.status(200).send('')
+  }catch(e){
+    next(e);
+  }
+}
+module.exports = { getUserDetail,updateUser,addStockToFavoriteList,removeStockFromFavoriteList };

@@ -1,5 +1,5 @@
 {
-    "connectionString":"mongodb://45.129.36.165:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1",
+    "connectionString":"mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1",
     "TableReportProviderServerAddress":"http://45.129.36.165:1278",
     "AiReportResolverServerAddress":"http://45.129.36.165:8000",
     "ReferrerCodes":{
