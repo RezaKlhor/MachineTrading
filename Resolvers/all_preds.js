@@ -1,11 +1,14 @@
-const data = require("./today.json")
 const stocks = require("../Database/stocks.json");
-const preds = Object.fromEntries(
-  Object.entries(data).filter(([key, value]) => key != 1 && key != 57)
-);
-const kolBours = Object.entries(data).find(([key, value]) => key == 1)[1];
-const kolHamvazn = Object.entries(data).find(([key, value]) => key == 57)[1];
-function getWeeklyStocksData() {
+function getData(data){
+  const preds = Object.fromEntries(
+    Object.entries(data).filter(([key, value]) => key != 1 && key != 57)
+  );
+  const kolBours = Object.entries(data).find(([key, value]) => key == 1)[1];
+  const kolHamvazn = Object.entries(data).find(([key, value]) => key == 57)[1];
+  return {preds,kolBours,kolHamvazn}
+}
+function getWeeklyStocksData(data) {
+  const {preds,kolBours,kolHamvazn}= getData(data)
   const oscillationData = Object.entries(preds)
     .map(([key, value], index) => {
       try {
@@ -19,7 +22,8 @@ function getWeeklyStocksData() {
     .sort((a, b) => b.confidence - a.confidence);
   return oscillationData;
 }
-function getMonthlyStocksData() {
+function getMonthlyStocksData(data) {
+  const {preds,kolBours,kolHamvazn}= getData(data)
   const oscillationData = Object.entries(preds)
     .map(([key, value], index) => {
       try {
@@ -35,7 +39,8 @@ function getMonthlyStocksData() {
     .sort((a, b) => b.confidence - a.confidence);
   return oscillationData;
 }
-function getOscStocksData() {
+function getOscStocksData(data) {
+  const {preds,kolBours,kolHamvazn}= getData(data)
   const oscillationData = Object.entries(preds)
     .map(([key, value], index) => ({
       name: stocks.find((s) => s.code == key).symbol,
@@ -45,7 +50,8 @@ function getOscStocksData() {
     .sort((a, b) => b.confidence - a.confidence);
   return oscillationData;
 }
-function getKoldata() {
+function getKoldata(data) {
+  const {preds,kolBours,kolHamvazn}= getData(data)
   const kolName = stocks.find((s) => s.code == 1).symbol;
   const kol = {
     weekly: {
@@ -81,10 +87,17 @@ function getKoldata() {
     [hamvaznName]: hamvazn,
   };
 }
+const axios = require('axios');
+
+async function fetchDataSync() {
+   
+    
+    
+}
+
 module.exports = {
   getKoldata,
   getOscStocksData,
   getMonthlyStocksData,
-  getWeeklyStocksData,
-  data,
+  getWeeklyStocksData
 };
