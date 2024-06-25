@@ -110,6 +110,7 @@ try {
   );
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
+  app.get("/api/predict/stockPredict", aiResolver.getStockPrediction);
   app.get("/api/predict/weeklyPredict", aiResolver.getAllWeeklyPrediction);
   app.get("/api/predict/monthlyPredict", aiResolver.getAllMonthlyPrediction);
   app.get("/api/predict/oscPredict", aiResolver.getOscPrediction);

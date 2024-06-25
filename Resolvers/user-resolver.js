@@ -10,7 +10,7 @@ async function getUserDetail(request, response, next) {
         isCompany: user.type == 1,
         email: user.email,
         companyName: user.companyname,
-        favoriteList:user.favoritelist
+        favoriteList:user.favoritelist || []
       })
     );
   } catch (e) {
