@@ -1,0 +1,1136 @@
+{
+    "68203878405672734": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 55.70734174507286
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 51.64581492313237
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.41913566599421
+        }
+    },
+    "10120557300120078": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.33361742972106
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 54.199001806963516
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.42946470489415
+        }
+    },
+    "65490886290565185": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.49214809930885
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 57.847408325507196
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 50.33151096444314
+        }
+    },
+    "44013656953678055": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 58.866499615297336
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 58.65432293769062
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.90889772499071
+        }
+    },
+    "45284811973404357": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 57.548024348628914
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 55.2216374195466
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 52.05914105930467
+        }
+    },
+    "18865325633315847": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 57.34766029145595
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 60.818240150250126
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.7251937727492
+        }
+    },
+    "52455922800537930": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.29189259715714
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 53.520321583861985
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.5152879929438
+        }
+    },
+    "971068957336171": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 56.985909851246475
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 56.55478407480008
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.1458139022836
+        }
+    },
+    "54369290104873523": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.01827585696287
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 51.154846894486276
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.23127090023985
+        }
+    },
+    "56574323121551263": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.35602249766205
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 53.91054023923123
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.862056458980675
+        }
+    },
+    "27668158733246204": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 57.601064209122306
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 62.34931380882885
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.00169384164028
+        }
+    },
+    "10831074117626896": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.01805601229689
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 57.302754250638316
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.976491340297336
+        }
+    },
+    "3050342257199174": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 58.7944847106242
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 57.81349989612991
+        },
+        "monthly": {
+            "trend": 0,
+            "sureness": 60.39753870853841
+        }
+    },
+    "793710053482057": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 53.99063591548793
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 50.81469272336193
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 60.882309686101145
+        }
+    },
+    "37222720235819361": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 57.23952657228991
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 60.82053931060039
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 57.59587943698875
+        }
+    },
+    "33293588228706998": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 52.00266864204713
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 51.74071290066339
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.486554434764216
+        }
+    },
+    "15521712617204216": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.76686445882355
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 51.60530219905113
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 50.645381173213835
+        }
+    },
+    "53449700212786324": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.20456768843879
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 57.619673231427
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.009135968017574
+        }
+    },
+    "71666521540545716": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 50.840098084758324
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 51.355421959199056
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.069775488393375
+        }
+    },
+    "17059960254855208": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.14516434866052
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 60.866019941396665
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 50.338608029683684
+        }
+    },
+    "67522512921942106": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 59.084040124444094
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 53.770541162067545
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.08121308878255
+        }
+    },
+    "70309338813767186": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 58.223837290240134
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 53.13949549182081
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 57.29624803502979
+        }
+    },
+    "71672399601682259": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 59.70451024914637
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 60.38212916053925
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.90304037533115
+        }
+    },
+    "28320293733348826": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 57.73753709175825
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 54.39993769907621
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.4276161135843
+        }
+    },
+    "2318736941376687": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 60.8518801823341
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 57.03608304010225
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 50.04132296670728
+        }
+    },
+    "23441366113375722": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.73362861069165
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 60.2728780035758
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 60.510597039787
+        }
+    },
+    "70474983732269112": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.94848018257126
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 57.60723234356814
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 50.7185515049816
+        }
+    },
+    "45452221088910484": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 51.07221604440724
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 57.16902756416174
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.51718829545855
+        }
+    },
+    "19471788163911687": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.29010560272333
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 57.750680968020085
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 60.55036655976006
+        }
+    },
+    "20966291817819448": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 58.48248722650008
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 58.05770544133649
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.351073455856465
+        }
+    },
+    "9481703061634967": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.182949923881054
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 60.83056252082238
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 58.96074055841709
+        }
+    },
+    "28450080638096732": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 51.83999295851694
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 50.41618654346445
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.787487515401324
+        }
+    },
+    "8725363201030474": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 54.39492591132084
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 51.22208899067891
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.1149512272606
+        }
+    },
+    "32347247706508046": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.642559885557105
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 60.703971220994596
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.66985095954874
+        }
+    },
+    "778253364357513": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 59.426272581643445
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 58.32548560927878
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 52.56323702636262
+        }
+    },
+    "62258804563636993": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.35964950739251
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 60.98226677093773
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.003232261539424
+        }
+    },
+    "59866041653103343": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 52.48502077031008
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 54.16611745989168
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.66343482665719
+        }
+    },
+    "16422980660132735": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.68415771632638
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 51.40995919447219
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.127429120059716
+        }
+    },
+    "10568944722570445": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.06484480897072
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 61.964989917898606
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 57.58254141335116
+        }
+    },
+    "20562694899904339": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.04267759066426
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 51.81288429119956
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 60.274561130522365
+        }
+    },
+    "20560887114747719": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 55.48011260541558
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 53.00912011615176
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.598624379036096
+        }
+    },
+    "22839330962768817": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 54.5931961593718
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 51.08020775077069
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.61793601859492
+        }
+    },
+    "35424116338766901": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 55.01743284299876
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 59.11945679838893
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.161395785973916
+        }
+    },
+    "47702059190622416": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 55.231266849037866
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 53.47600081123802
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.17704948223221
+        }
+    },
+    "52382684379473036": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.099478449283886
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 52.634821397241
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 57.397889395559496
+        }
+    },
+    "35543935713999309": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 56.39286287548078
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 57.09815865334865
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.221997770479845
+        }
+    },
+    "67690708346979840": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 54.831595948928204
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 55.61624651013434
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.03147049925641
+        }
+    },
+    "13281937213456378": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 57.27793120569133
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 57.04943915768559
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 50.51557161167664
+        }
+    },
+    "40025799067544201": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.01584410504446
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 68.13209182636052
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.06201497076038
+        }
+    },
+    "58035444268544991": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 56.00253539627233
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 53.74000609617208
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.74495943947437
+        }
+    },
+    "34641719089573667": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.96017281481608
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 54.276428987680845
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 52.594075646853575
+        }
+    },
+    "2400322364771558": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 50.20642354999232
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 57.64166218731966
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 54.96314882820346
+        }
+    },
+    "57600064931636077": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.736570281215535
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 58.92243092755673
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 53.604149763781315
+        }
+    },
+    "50792786683910016": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 54.25900283628108
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 57.39076903057977
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 58.36969603662942
+        }
+    },
+    "65023851436340574": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 53.08017481420109
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 56.82589573270704
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 54.696164400743655
+        }
+    },
+    "12387472624849835": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 58.32766494903834
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 50.617496599809414
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.038965084792714
+        }
+    },
+    "50503654866742146": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 53.433642974262426
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 52.64411412386962
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.99957581102861
+        }
+    },
+    "27405735172634593": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.23748491737502
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 59.7086359011099
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.246764551158144
+        }
+    },
+    "41122066907413786": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.91756146544191
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 55.57901772253054
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.01993542158181
+        }
+    },
+    "67141987086032267": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.00958278945864
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 55.424373999559435
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.38030584184504
+        }
+    },
+    "70289374539527245": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.70981593726717
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 60.0996521714595
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.26559525408356
+        }
+    },
+    "28854105556435129": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 52.893583514809904
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 58.013271738727084
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 54.13392092085649
+        }
+    },
+    "46982154647719707": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 60.34973690715102
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 56.146224190078755
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.75387126616732
+        }
+    },
+    "15930821245168534": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.01171753110536
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 51.8386484725839
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.18124225069866
+        }
+    },
+    "2589887561569709": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.493046584880005
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 57.81829014999682
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 55.42953853742729
+        }
+    },
+    "4507558419857064": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 51.71370010997522
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 61.70684524837699
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.022595698367375
+        }
+    },
+    "34721884030854211": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 56.46676113645709
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 56.76630761831372
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.4283410012476
+        }
+    },
+    "10145129193828624": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 58.77882424683229
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 56.300463954831976
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.680909307148376
+        }
+    },
+    "47841327496247362": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 56.72461478846145
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 54.55616898731672
+        },
+        "monthly": {
+            "trend": 2,
+            "sureness": 52.928319399938076
+        }
+    },
+    "3542690854557886": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 56.45271753486292
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 56.231540436500254
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 51.42841360976636
+        }
+    },
+    "68117765376081366": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 58.58110428218088
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 52.045273663874546
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 54.4420663934016
+        }
+    },
+    "27096851668435724": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 55.49738878293386
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 55.25418309856236
+        },
+        "monthly": {
+            "trend": 0,
+            "sureness": 54.600387596461395
+        }
+    },
+    "59486059679335017": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 50.7305085120347
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 54.63582575318494
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 59.28155173414283
+        }
+    },
+    "31188566503248753": {
+        "weekly": {
+            "trend": 1,
+            "sureness": 51.27164172815529
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 55.06234014796599
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 53.92319648822234
+        }
+    },
+    "34718633636164421": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 57.59809496522632
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 56.04326799370414
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 56.35077231437483
+        }
+    },
+    "28788598290160782": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 60.47863045331851
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 58.0513466348027
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 52.8724202743148
+        }
+    },
+    "40611478183231802": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 54.361130574861974
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 60.242908905450264
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 54.16610676979359
+        }
+    },
+    "50100062518826135": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 51.92452600899094
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 54.61979502165316
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 60.70454281357683
+        }
+    },
+    "16673205196919832": {
+        "weekly": {
+            "trend": 2,
+            "sureness": 56.27278556197017
+        },
+        "weekly_oscillator": {
+            "trend": 2,
+            "sureness": 65.63870731902149
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 58.34025565160232
+        }
+    },
+    "1": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 55.6530214419883
+        },
+        "weekly_oscillator": {
+            "trend": 0,
+            "sureness": 55.460468503167654
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 52.591997517000806
+        }
+    },
+    "57": {
+        "weekly": {
+            "trend": 0,
+            "sureness": 56.697609083690395
+        },
+        "weekly_oscillator": {
+            "trend": 1,
+            "sureness": 54.63051577843039
+        },
+        "monthly": {
+            "trend": 1,
+            "sureness": 60.02233738940882
+        }
+    }
+}

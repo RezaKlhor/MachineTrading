@@ -24,6 +24,7 @@ const {
   removeStockFromFavoriteList
 } = require("./Resolvers/user-resolver");
 const { getTotal } = require("./Resolvers/fear-resolver");
+const { getAllTechnical } = require("./Resolvers/technical-resolver");
 app.use(cors());
 
 const authenticateToken = (req, res, next) => {
@@ -108,8 +109,10 @@ try {
     "/api/common/getMarketOverallStatistics",
     commonResolver.getMarketOverallParameters
   );
+  app.get("/api/tech/getAll",getAllTechnical)
   app.get("/api/ath/getAll", athResolver.getAll);
   app.get("/api/ath/getOne", athResolver.getOne);
+  app.get("/api/predict/getAvailablePredicts", aiResolver.getAvailablePredicts);
   app.get("/api/predict/stockPredict", aiResolver.getStockPrediction);
   app.get("/api/predict/weeklyPredict", aiResolver.getAllWeeklyPrediction);
   app.get("/api/predict/monthlyPredict", aiResolver.getAllMonthlyPrediction);
