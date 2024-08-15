@@ -1251,7 +1251,7 @@ function getPredictByDate(date) {
 async function getAllWeeklyPredictionObserve(request, response, next) {
   try {
     const result = await axios.post(
-      `${TableReportProviderServerAddress}/predtest/all/`,
+      `${TableReportProviderServerAddress}/predtest/all/?date=${request.query.date}`,
       getPredictByDate(request.query.date), // Pass lastWeek as the data property
       {
         headers: {
