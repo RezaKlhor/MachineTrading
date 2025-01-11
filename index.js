@@ -89,8 +89,8 @@ const authorize = (req, res, next) => {
   }
   next();
 };
-app.use(authenticateToken);
-app.use(authorize);
+// app.use(authenticateToken);
+// app.use(authorize);
 try {
   app.get("/api/ptoe", async (req, res) => {
     try {
