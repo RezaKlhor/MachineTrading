@@ -29,7 +29,7 @@ async function getAllTechnical(request, response, next) {
     newArray = newArray.filter((item) =>
       name ? item.stockTitle.includes(name) : true
     );
-    newArray= newArray.sort((a, b) => b.sum - a.sum);
+    newArray= newArray.sort((a, b) => b.sum - a.sum).map((stock, index) => ({ index: index + 1, ...stock }));
     response.status(200).send(newArray);
   } catch (e) {
     next(e);
